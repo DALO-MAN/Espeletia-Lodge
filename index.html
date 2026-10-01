@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espeletia Lodge | Refugio Ancestral en el Páramo de El Ángel</title>
+  <meta name="description" content="Hostería Espeletia Lodge en la Reserva Ecológica El Ángel, Carchi. Cabañas de madera, hidromasaje, bosque milenario de Polylepis y gastronomía tradicional.">
+  <link rel="icon" type="image/png" href="assets/images/logo-espeletia-lodge.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container top-bar-content">
+      <div class="contact-pill">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Reserva Ecológica El Ángel, Carchi - Ecuador</span>
+      </div>
+      <div class="top-right-meta">
+        <a href="tel:0995621296" class="phone-link"><i class="fa-solid fa-phone"></i> 0995621296 (Arturo Mier)</a>
+        <div class="lang-switch">
+          <button id="lang-btn" class="lang-toggle-btn" aria-label="Cambiar idioma">
+            <i class="fa-solid fa-globe"></i> <span id="current-lang-text">EN</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegación Principal -->
+  <header class="main-header" id="navbar">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-identity">
+        <img src="assets/images/logo-espeletia-lodge.png" alt="Logo Espeletia Lodge" class="brand-logo">
+        <div class="brand-names">
+          <span class="brand-title">ESPELETIA</span>
+          <span class="brand-subtitle">LODGE • PÁRAMO & BIENESTAR</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="#bosque" class="nav-link" data-i18n="nav.forest">El Santuario</a></li>
+          <li><a href="#hospedaje" class="nav-link" data-i18n="nav.lodging">Hospedaje & Tarifas</a></li>
+          <li><a href="#gastronomia" class="nav-link" data-i18n="nav.food">Gastronomía</a></li>
+          <li><a href="#actividades" class="nav-link" data-i18n="nav.activities">Actividades</a></li>
+          <li><a href="#pagos" class="nav-link" data-i18n="nav.payments">Formas de Pago</a></li>
+          <li><a href="#ubicacion" class="nav-link" data-i18n="nav.location">Ubicación</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#reservas" class="btn btn-primary nav-reserve-btn" data-i18n="nav.bookNow">
+            <i class="fa-regular fa-calendar-check"></i> Reservar Ahora
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION (Fondo: 4ta imagen - Atardecer con frailejones) -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-backdrop"></div>
+    <div class="hero-fog-overlay"></div>
+    
+    <div class="container hero-content">
+      <span class="hero-tagline" data-i18n="hero.tagline">
+        <i class="fa-solid fa-feather-pointed"></i> Refugio Místico en las Alturas del Carchi
+      </span>
+
+      <!-- Poesía de bienvenida inspiradora -->
+      <h1 class="hero-title" data-i18n="hero.title">
+        Donde el silencio abraza la niebla y los frailejones velan tu descanso
+      </h1>
+      
+      <p class="hero-poem" data-i18n="hero.poem">
+        "Respira el suspiro milenario del páramo andino. Deja que la bruma disuelva tus pesares, 
+        mientras el calor de nuestras cabañas de madera y el latido del bosque de papel te devuelven a lo esencial."
+      </p>
+
+      <div class="hero-actions">
+        <a href="#reservas" class="btn btn-accent btn-large" data-i18n="hero.ctaReserve">
+          <i class="fa-solid fa-calendar-days"></i> Ver Disponibilidad y Reservar
+        </a>
+        <a href="#bosque" class="btn btn-outline btn-large" data-i18n="hero.ctaExplore">
+          <i class="fa-solid fa-compass"></i> Descubrir la Experiencia
+        </a>
+      </div>
+
+      <!-- Quick Highlights Bar -->
+      <div class="hero-quick-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-tree"></i>
+          <div>
+            <strong data-i18n="hero.feat1Title">Bosque de Polylepis</strong>
+            <span data-i18n="hero.feat1Sub">Árbol de papel milenario</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-hot-tub-person"></i>
+          <div>
+            <strong data-i18n="hero.feat2Title">Confort Térmico</strong>
+            <span data-i18n="hero.feat2Sub">Hidromasaje y cobijas térmicas</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-utensils"></i>
+          <div>
+            <strong data-i18n="hero.feat3Title">Pensión Completa</strong>
+            <span data-i18n="hero.feat3Sub">Desayuno, almuerzo y merienda</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-mountain-sun"></i>
+          <div>
+            <strong data-i18n="hero.feat4Title">Lunes a Domingo</strong>
+            <span data-i18n="hero.feat4Sub">Atención y reservas todo el año</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. EL BOSQUE ANCESTRAL Y LA POESÍA DEL ENTORNO -->
+  <section class="section section-mystic" id="bosque">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="mystic.subtitle">El Legado Natural de El Ángel</span>
+        <h2 class="section-main-title" data-i18n="mystic.title">El Árbol de Papel y el Misticismo del Páramo</h2>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-spa"></i><span></span>
+        </div>
+      </div>
+
+      <div class="mystic-grid">
+        <div class="mystic-text-block">
+          <div class="quote-card">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p class="poetic-quote" data-i18n="mystic.quote">
+              "Sus troncos retorcidos, de una profunda tonalidad cobriza y rojiza, están cubiertos por múltiples 
+              capas de corteza delgada que se desprenden como hojas de pergamino, guardando en cada pliegue 
+              los secretos de los siglos. Caminar bajo su dosel es cruzar un umbral hacia la magia."
+            </p>
+          </div>
+
+          <p class="description-paragraph" data-i18n="mystic.p1">
+            En la <strong>Reserva Ecológica El Ángel</strong>, la Hostería <strong>Espeletia Lodge</strong> es un refugio 
+            protegido por musgos, líquenes y helechos que parecen salidos de un cuento de hadas donde el tiempo se detiene. 
+            Aquí desafiamos la altitud y el frío andino brindándote un santuario cálido de paz, idílico para venir en pareja, 
+            familia o con tus personas más queridas.
+          </p>
+
+          <div class="mystic-pillars">
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fa-solid fa-wind"></i></div>
+              <div>
+                <h4 data-i18n="mystic.pillar1Title">Aire Puro e Inmaculado</h4>
+                <p data-i18n="mystic.pillar1Text">Desconexión total del estrés urbano a más de 3,600 metros de altitud.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div>
+                <h4 data-i18n="mystic.pillar2Title">Bienestar Corporal</h4>
+                <p data-i18n="mystic.pillar2Text">Fusión de hidroterapia caliente con la contemplación infinita de las montañas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mystic-visual-block">
+          <div class="image-composition">
+            <img src="assets/images/cabana-bosque-polylepis-noche.jpg" alt="Cabaña de madera iluminada en el bosque milenario de Polylepis" class="img-main-composition">
+            <div class="floating-badge">
+              <img src="assets/images/complejo-cabanas-vista-aerea.png" alt="Vista aérea de las cabañas Espeletia Lodge" class="img-thumb-badge">
+              <div class="badge-text">
+                <strong data-i18n="mystic.badgeTitle">Complejo en Ladera</strong>
+                <span data-i18n="mystic.badgeSub">Entre miles de Frailejones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. HOSPEDAJE, PAQUETE COMPLETO Y TARIFAS -->
+  <section class="section section-lodging" id="hospedaje">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="lodging.subtitle">Planes Todo Incluido & Confort</span>
+        <h2 class="section-main-title" data-i18n="lodging.title">Hospedaje Cálido & Precios Transparentes</h2>
+        <p class="section-subtext" data-i18n="lodging.desc">
+          Cabañas de madera construidas sobre palafitos con amplios ventanales, equipadas con cobijas eléctricas 
+          para un descanso insuperable.
+        </p>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-bed"></i><span></span>
+        </div>
+      </div>
+
+      <!-- Grid de Cabañas y Tarifas -->
+      <div class="pricing-container">
+        <!-- Tarjeta Principal: Paquete Completo $80 -->
+        <div class="pricing-card featured-plan">
+          <div class="plan-ribbon" data-i18n="lodging.ribbon">Experiencia Recomendada</div>
+          <div class="plan-header">
+            <div class="plan-icon-top"><i class="fa-solid fa-house-chimney-window"></i></div>
+            <h3 class="plan-name" data-i18n="lodging.planName">Paquete Integral Espeletia</h3>
+            <p class="plan-tag" data-i18n="lodging.planTag">Todo incluido por persona por noche</p>
+            <div class="price-value">
+              <span class="currency">$</span>
+              <span class="amount">80</span>
+              <span class="period">USD / persona</span>
+            </div>
+          </div>
+
+          <div class="plan-features">
+            <h4 data-i18n="lodging.includesHeader">Tu estadía incluye:</h4>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="lodging.f1B">Alojamiento en Cabaña de Madera:</strong> <span data-i18n="lodging.f1">Habitación con vista panorámica y cobija eléctrica.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="lodging.f2B">Desayuno Andino Completo:</strong> <span data-i18n="lodging.f2">Fruta fresca, huevos, tostadas calientes y bebida aromática.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="lodging.f3B">Almuerzo Gourmet:</strong> <span data-i18n="lodging.f3">Plato fuerte tradicional (trucha / carnes con guarniciones y salsa de champiñones).</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="lodging.f4B">Merienda Típica de Páramo:</strong> <span data-i18n="lodging.f4">Tortillas de tiesto al calor del fuego y café/infusión.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="lodging.f5B">Caminata Guiada:</strong> <span data-i18n="lodging.f5">Sendero místico por la laguna y el interior del bosque de Polylepis.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong data-i18n="lodging.f6B">Paseo en el Columpio Extremo:</strong> <span data-i18n="lodging.f6">Vuelo panorámico con vista a las laderas del páramo.</span></li>
+            </ul>
+          </div>
+
+          <div class="plan-footer">
+            <a href="#reservas" class="btn btn-accent btn-block" data-i18n="lodging.btnReserve">
+              <i class="fa-regular fa-calendar-check"></i> Seleccionar Fechas
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjetas de Adicionales -->
+        <div class="addons-column">
+          <div class="addon-card">
+            <div class="addon-img-wrapper">
+              <img src="assets/images/hidromasaje-jacuzzi-vista-panoramica.png" alt="Tina de hidromasaje con vista al páramo">
+            </div>
+            <div class="addon-info">
+              <div class="addon-price-badge">+$8 USD</div>
+              <h4 data-i18n="lodging.jacuzziTitle">Tina de Hidromasaje Panorámica</h4>
+              <p data-i18n="lodging.jacuzziDesc">
+                Relájate en agua caliente con hidrojets mientras contemplas a través del gran ventanal 
+                las colinas y el misterio del páramo. <em>(Adicional sobre el precio final de tu paquete)</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="addon-card">
+            <div class="addon-img-wrapper">
+              <img src="assets/images/cabana-interior-vista-juegos.jpg" alt="Interior con mirador y zona de relajación">
+            </div>
+            <div class="addon-info">
+              <div class="addon-price-badge">$30 USD / persona</div>
+              <h4 data-i18n="lodging.massageTitle">Sesión de Masajes Antiestrés</h4>
+              <p data-i18n="lodging.massageDesc">
+                Terapeutas especializados para desvanecer contracturas y elevar tu vivencia hacia el éxtasis 
+                de la paz interior en la calidez de la cabaña.
+              </p>
+            </div>
+          </div>
+
+          <!-- Calculadora rápida en tiempo real -->
+          <div class="quote-calculator-box">
+            <h4 data-i18n="calc.title"><i class="fa-solid fa-calculator"></i> Cotizador Rápido de Estadía</h4>
+            <div class="calc-inputs">
+              <div class="input-group">
+                <label data-i18n="calc.people">Huéspedes:</label>
+                <input type="number" id="calcGuests" min="1" max="20" value="2">
+              </div>
+              <div class="input-group">
+                <label data-i18n="calc.nights">Noches:</label>
+                <input type="number" id="calcNights" min="1" max="15" value="1">
+              </div>
+            </div>
+            <div class="calc-checkboxes">
+              <label class="check-container">
+                <input type="checkbox" id="calcJacuzzi" checked>
+                <span class="checkmark"></span>
+                <span data-i18n="calc.addJacuzzi">Incluir Tina de Hidromasaje (+$8)</span>
+              </label>
+              <label class="check-container">
+                <input type="checkbox" id="calcMassages">
+                <span class="checkmark"></span>
+                <span data-i18n="calc.addMassage">Añadir Masajes ($30 c/u)</span>
+              </label>
+            </div>
+            <div class="calc-total-display">
+              <span data-i18n="calc.totalLabel">Total Estimado:</span>
+              <strong id="calcTotal">$168 USD</strong>
+            </div>
+            <button id="applyToBooking" class="btn btn-sm btn-outline-dark" data-i18n="calc.applyBtn">
+              Llevar a Reservas <i class="fa-solid fa-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. APARTADO ESPECIAL: GASTRONOMÍA ANDINA -->
+  <section class="section section-food" id="gastronomia">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="food.subtitle">Sabores Entrañables & Tradición</span>
+        <h2 class="section-main-title" data-i18n="food.title">Gastronomía de Altura: Del Tiesto a tu Mesa</h2>
+        <p class="section-subtext" data-i18n="food.desc">
+          En el clima frío del páramo, cada plato es un abrazo cálido para el alma. Tu hospedaje incluye los 
+          tres momentos del día preparados con ingredientes frescos y amor andino.
+        </p>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-mug-hot"></i><span></span>
+        </div>
+      </div>
+
+      <div class="food-gallery-grid">
+        <!-- 1. Desayuno -->
+        <div class="food-card">
+          <div class="food-img-container">
+            <img src="assets/images/gastronomia-desayuno-andino.png" alt="Desayuno andino con frutas, huevos revueltos y tostadas">
+            <span class="food-badge" data-i18n="food.b1">Mañanas con Energía</span>
+          </div>
+          <div class="food-card-body">
+            <h3 data-i18n="food.c1Title">Desayuno Andino Nutritivo</h3>
+            <p data-i18n="food.c1Desc">
+              Selección de frutas frescas picadas (papaya, kiwi, uvas), huevos revueltos suaves y esponjosos, 
+              crujientes tostadas doradas y café de altura recién pasado.
+            </p>
+            <div class="food-meta">
+              <span><i class="fa-regular fa-clock"></i> 07:30 - 09:30</span>
+              <span class="tag-included" data-i18n="food.included">Incluido en tu estadía</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Almuerzo -->
+        <div class="food-card">
+          <div class="food-img-container">
+            <img src="assets/images/gastronomia-almuerzo-trucha-champinones.png" alt="Almuerzo tradicional con trucha o carne en salsa de champiñones">
+            <span class="food-badge" data-i18n="food.b2">Sabor Gourmet</span>
+          </div>
+          <div class="food-card-body">
+            <h3 data-i18n="food.c2Title">Almuerzo Especial de Páramo</h3>
+            <p data-i18n="food.c2Desc">
+              Filete dorado a la plancha bañado en salsa cremosa de champiñones silvestres, acompañado de papas 
+              rústicas crocantes, arroz andino y ensalada de huerto.
+            </p>
+            <div class="food-meta">
+              <span><i class="fa-regular fa-clock"></i> 12:30 - 15:00</span>
+              <span class="tag-included" data-i18n="food.included">Incluido en tu estadía</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Merienda -->
+        <div class="food-card">
+          <div class="food-img-container">
+            <img src="assets/images/gastronomia-merienda-tortillas-cafe.png" alt="Merienda con café caliente y tortillas de tiesto artesanales">
+            <span class="food-badge" data-i18n="food.b3">Tradición al Fuego</span>
+          </div>
+          <div class="food-card-body">
+            <h3 data-i18n="food.c3Title">Merienda Típica & Tertulia</h3>
+            <p data-i18n="food.c3Desc">
+              Tortillas de tiesto artesanales asadas a la brasa, servidas con una reconfortante taza humeante 
+              de café o infusión de hierbas locales, para abrigar la caída de la tarde.
+            </p>
+            <div class="food-meta">
+              <span><i class="fa-regular fa-clock"></i> 17:00 - 18:30</span>
+              <span class="tag-included" data-i18n="food.included">Incluido en tu estadía</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner del Restaurante Panorámico -->
+      <div class="restaurant-ambience-banner">
+        <div class="restaurant-image">
+          <img src="assets/images/restaurante-salon-panoramico.jpg" alt="Salón comedor del restaurante con ventanales y calefactores">
+        </div>
+        <div class="restaurant-content">
+          <span class="sub" data-i18n="food.restSub">Salón Comedor y Cafetería</span>
+          <h3 data-i18n="food.restTitle">Un Mirador Cálido frente al Bosque</h3>
+          <p data-i18n="food.restP">
+            Nuestro restaurante cuenta con amplios ventanales panorámicos que permiten contemplar los troncos 
+            retorcidos del Polylepis mientras disfrutas tus alimentos. Para tu confort, disponemos de calefactores 
+            de ambiente que mantienen un clima acogedor en todo momento.
+          </p>
+          <div class="restaurant-features-pills">
+            <span><i class="fa-solid fa-fire"></i> Ambiente Calefaccionado</span>
+            <span><i class="fa-solid fa-wine-glass"></i> Opciones Vegetarianas Bajo Pedido</span>
+            <span><i class="fa-solid fa-users"></i> Eventos Familiares y Corporativos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ACTIVIDADES Y AVENTURA -->
+  <section class="section section-activities" id="actividades">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="activities.subtitle">Experiencias Memorables</span>
+        <h2 class="section-main-title" data-i18n="activities.title">Aventura, Senderismo & Adrenalina Serena</h2>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-person-hiking"></i><span></span>
+        </div>
+      </div>
+
+      <div class="activities-mosaic">
+        <!-- Actividad 1: Columpio del Páramo -->
+        <div class="activity-tile tile-wide">
+          <div class="tile-bg" style="background-image: url('assets/images/actividad-columpio-extremo-paramo.png');"></div>
+          <div class="tile-overlay"></div>
+          <div class="tile-content">
+            <span class="tile-tag" data-i18n="activities.act1Tag">Adrenalina en las Alturas</span>
+            <h3 data-i18n="activities.act1Title">El Columpio Extremo del Páramo</h3>
+            <p data-i18n="activities.act1Desc">
+              Balancéate sobre el abismo verde rodeado de frailejones y montañas envueltas en nubes. 
+              La foto perfecta y una sensación inigualable de libertad absoluta. *(Incluido en tu paquete)*.
+            </p>
+          </div>
+        </div>
+
+        <!-- Actividad 2: Caminata Guiada por la Laguna -->
+        <div class="activity-tile">
+          <div class="tile-bg" style="background-image: url('assets/images/caminata-guiada-laguna-polylepis.png');"></div>
+          <div class="tile-overlay"></div>
+          <div class="tile-content">
+            <span class="tile-tag" data-i18n="activities.act2Tag">Misticismo & Flora</span>
+            <h3 data-i18n="activities.act2Title">Caminata Guiada por la Laguna</h3>
+            <p data-i18n="activities.act2Desc">
+              Senderos serpenteantes que bordean espejos de agua cristalina y la corteza rojiza del bosque 
+              milenario. *(Incluido en tu paquete)*.
+            </p>
+          </div>
+        </div>
+
+        <!-- Actividad 3: Relax en Cabañas & Juegos -->
+        <div class="activity-tile">
+          <div class="tile-bg" style="background-image: url('assets/images/cabanas-exteriores-paramo.png');"></div>
+          <div class="tile-overlay"></div>
+          <div class="tile-content">
+            <span class="tile-tag" data-i18n="activities.act3Tag">Paz Interior</span>
+            <h3 data-i18n="activities.act3Title">Cabañas con Miradores & Juegos</h3>
+            <p data-i18n="activities.act3Desc">
+              Disfruta de juegos de mesa de madera, lectura junto al ventanal y silencio reparador, 
+              lejos de la rutina y las pantallas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CALENDARIO INTERACTIVO & RESERVAS -->
+  <section class="section section-booking" id="reservas">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="booking.subtitle">Planifica tus Vacaciones</span>
+        <h2 class="section-main-title" data-i18n="booking.title">Disponibilidad & Reserva Directa</h2>
+        <p class="section-subtext" data-i18n="booking.desc">
+          Consulta en tiempo real los días disponibles, selecciona tus fechas y confirma con Arturo Mier 
+          para asegurar tu cabaña en el páramo.
+        </p>
+        <div class="divider-leaf">
+          <span></span><i class="fa-regular fa-calendar-check"></i><span></span>
+        </div>
+      </div>
+
+      <div class="booking-wrapper">
+        <!-- Columna Izquierda: Calendario Interactivo -->
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <button id="prevMonth" class="cal-nav-btn" aria-label="Mes anterior"><i class="fa-solid fa-chevron-left"></i></button>
+            <h3 id="calendarMonthYear">Octubre 2026</h3>
+            <button id="nextMonth" class="cal-nav-btn" aria-label="Mes siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <div class="calendar-weekdays">
+            <span data-i18n="cal.sun">Dom</span>
+            <span data-i18n="cal.mon">Lun</span>
+            <span data-i18n="cal.tue">Mar</span>
+            <span data-i18n="cal.wed">Mié</span>
+            <span data-i18n="cal.thu">Jue</span>
+            <span data-i18n="cal.fri">Vie</span>
+            <span data-i18n="cal.sat">Sáb</span>
+          </div>
+
+          <div class="calendar-days-grid" id="calendarDays">
+            <!-- Días renderizados con JavaScript -->
+          </div>
+
+          <div class="calendar-legend">
+            <span class="legend-item"><span class="legend-dot dot-available"></span> <span data-i18n="cal.avail">Disponible</span></span>
+            <span class="legend-item"><span class="legend-dot dot-selected"></span> <span data-i18n="cal.sel">Seleccionado</span></span>
+            <span class="legend-item"><span class="legend-dot dot-occupied"></span> <span data-i18n="cal.occ">Reservado</span></span>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario de Solicitud de Reserva -->
+        <div class="booking-form-box">
+          <h3 data-i18n="bookForm.title"><i class="fa-solid fa-feather"></i> Tu Reserva en Espeletia</h3>
+          
+          <form id="reservationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="bookForm.checkIn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Check-in:</label>
+                <input type="text" id="checkInDate" placeholder="Selecciona en el calendario" readonly required>
+              </div>
+              <div class="form-group">
+                <label data-i18n="bookForm.checkOut"><i class="fa-solid fa-arrow-right-from-bracket"></i> Check-out:</label>
+                <input type="text" id="checkOutDate" placeholder="Selecciona en el calendario" readonly required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="bookForm.name"><i class="fa-solid fa-user"></i> Nombre Completo:</label>
+                <input type="text" id="guestName" placeholder="Ej. Juan Pérez" required>
+              </div>
+              <div class="form-group">
+                <label data-i18n="bookForm.phone"><i class="fa-solid fa-phone"></i> Teléfono / WhatsApp:</label>
+                <input type="tel" id="guestPhone" placeholder="Ej. 0991234567" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="bookForm.guests"><i class="fa-solid fa-users"></i> Número de Personas ($80 c/u):</label>
+                <select id="formGuests">
+                  <option value="1">1 Persona</option>
+                  <option value="2" selected>2 Personas</option>
+                  <option value="3">3 Personas</option>
+                  <option value="4">4 Personas</option>
+                  <option value="5">5 Personas</option>
+                  <option value="6">6 Personas</option>
+                  <option value="8">Grupo Familiar (8+ personas)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label data-i18n="bookForm.origin"><i class="fa-solid fa-earth-americas"></i> Procedencia:</label>
+                <input type="text" id="guestOrigin" placeholder="Ej. Quito / Tulcán / Internacional">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="bookForm.servicesTitle"><i class="fa-solid fa-star"></i> Servicios Adicionales Deseados:</label>
+              <div class="addons-selection">
+                <label class="check-container">
+                  <input type="checkbox" id="formAddonJacuzzi" checked>
+                  <span class="checkmark"></span>
+                  <span data-i18n="bookForm.jacuzziOpt">Tina de Hidromasaje con vista (+$8 USD al total)</span>
+                </label>
+                <label class="check-container">
+                  <input type="checkbox" id="formAddonMassage">
+                  <span class="checkmark"></span>
+                  <span data-i18n="bookForm.massageOpt">Sesión de Masajes Antiestrés ($30 USD por persona)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="bookForm.notes"><i class="fa-solid fa-message"></i> Petición Especial / Requerimientos Alimenticios:</label>
+              <textarea id="guestNotes" rows="2" placeholder="Restricciones dietéticas, celebración de aniversario, etc."></textarea>
+            </div>
+
+            <!-- Resumen de Costo -->
+            <div class="reservation-summary-card">
+              <div class="summary-line">
+                <span data-i18n="bookForm.baseCost">Hospedaje Integral:</span>
+                <span id="summaryBasePrice">$160.00 USD</span>
+              </div>
+              <div class="summary-line">
+                <span data-i18n="bookForm.extrasCost">Adicionales seleccionados:</span>
+                <span id="summaryExtrasPrice">$8.00 USD</span>
+              </div>
+              <div class="summary-total">
+                <span data-i18n="bookForm.total">Total Estimado:</span>
+                <strong id="summaryTotalPrice">$168.00 USD</strong>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-block btn-submit-reserve" data-i18n="bookForm.btnSubmit">
+              <i class="fa-brands fa-whatsapp"></i> Confirmar Reserva por WhatsApp
+            </button>
+            <p class="form-disclaimer" data-i18n="bookForm.disclaimer">
+              Se abrirá un chat directo con <strong>Arturo Mier (0995621296)</strong> con los detalles listos.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FORMAS DE PAGO -->
+  <section class="section section-payments" id="pagos">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="payments.subtitle">Facilidades & Seguridad</span>
+        <h2 class="section-main-title" data-i18n="payments.title">Formas de Pago Aceptadas</h2>
+        <p class="section-subtext" data-i18n="payments.desc">
+          Ponemos a tu disposición métodos convenientes y seguros para gestionar tu abono o pago completo.
+        </p>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-credit-card"></i><span></span>
+        </div>
+      </div>
+
+      <div class="payments-grid">
+        <!-- Pago 1: Efectivo -->
+        <div class="payment-card">
+          <div class="payment-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+          <h3 data-i18n="payments.p1Title">Efectivo</h3>
+          <p data-i18n="payments.p1Desc">
+            Puedes realizar el pago en efectivo directamente en la recepción de la hostería al momento de tu llegada o check-in.
+          </p>
+          <div class="payment-status">
+            <i class="fa-solid fa-check"></i> <span data-i18n="payments.p1Badge">Recepción Lodge</span>
+          </div>
+        </div>
+
+        <!-- Pago 2: Transferencia Banco del Austro -->
+        <div class="payment-card featured-payment">
+          <div class="payment-badge-featured" data-i18n="payments.p2Featured">Recomendado Nacional</div>
+          <div class="payment-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <h3 data-i18n="payments.p2Title">Transferencia Bancaria</h3>
+          <p data-i18n="payments.p2Desc">
+            Para asegurar tu cupo previo, aceptamos transferencias y depósitos bancarios directos:
+          </p>
+          <div class="bank-details-box">
+            <div><strong>Banco:</strong> Banco del Austro</div>
+            <div><strong>Beneficiario:</strong> Arturo Mier / Espeletia Lodge</div>
+            <div><strong>Comprobante:</strong> Enviar foto o captura a WhatsApp (0995621296)</div>
+          </div>
+          <div class="payment-status">
+            <i class="fa-solid fa-check"></i> <span data-i18n="payments.p2Badge">Transferencia Directa</span>
+          </div>
+        </div>
+
+        <!-- Pago 3: Tarjetas de Crédito / Débito -->
+        <div class="payment-card">
+          <div class="payment-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3 data-i18n="payments.p3Title">Tarjetas de Crédito / Débito</h3>
+          <p data-i18n="payments.p3Desc">
+            Aceptamos las principales tarjetas nacionales e internacionales para turistas del país y extranjeros.
+          </p>
+          <div class="cards-logos">
+            <span class="card-chip"><i class="fa-brands fa-cc-visa"></i> Visa</span>
+            <span class="card-chip"><i class="fa-brands fa-cc-mastercard"></i> Mastercard</span>
+            <span class="card-chip"><i class="fa-brands fa-cc-amex"></i> Amex</span>
+          </div>
+          <div class="payment-status">
+            <i class="fa-solid fa-check"></i> <span data-i18n="payments.p3Badge">Procesamiento Seguro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. UBICACIÓN, CÓMO LLEGAR Y MAPA INTERACTIVO -->
+  <section class="section section-location" id="ubicacion">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="location.subtitle">Encuéntranos en las Alturas</span>
+        <h2 class="section-main-title" data-i18n="location.title">¿Cómo Llegar a Espeletia Lodge?</h2>
+        <p class="section-subtext" data-i18n="location.desc">
+          Ubicados en el corazón de la Reserva Ecológica El Ángel, Carchi, Ecuador.
+        </p>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-map-location-dot"></i><span></span>
+        </div>
+      </div>
+
+      <div class="location-layout">
+        <!-- Guía de Viaje -->
+        <div class="travel-guide-card">
+          <div class="guide-item">
+            <div class="guide-icon"><i class="fa-solid fa-car-side"></i></div>
+            <div>
+              <h4 data-i18n="location.natTitle">Para Visitantes Nacionales (Carro Propio)</h4>
+              <p data-i18n="location.natDesc">
+                Desde Quito o Ibarra, toma la ruta Panamericana Norte hacia el Carchi. Al llegar a la vía hacia 
+                El Ángel, sigue la señalización hacia la Reserva Ecológica. El acceso permite vehículos particulares 
+                disfrutando de vistas panorámicas durante el ascenso.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-icon"><i class="fa-solid fa-bus-simple"></i></div>
+            <div>
+              <h4 data-i18n="location.intTitle">Para Turistas Extranjeros & Tours</h4>
+              <p data-i18n="location.intDesc">
+                Los visitantes de Alemania, Suiza, Estados Unidos, Colombia y Argentina pueden coordinar el traslado 
+                a través de buses turísticos o transporte privado contratado directamente hasta el acceso del lodge.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+            <div>
+              <h4 data-i18n="location.tipsTitle">Recomendaciones para el Páramo</h4>
+              <p data-i18n="location.tipsDesc">
+                Llevar ropa abrigada e impermeable, calzado cómodo de senderismo, protector solar y cámara fotográfica. 
+                Nuestras cabañas cuentan con calefactores y cobijas térmicas.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-box-inner">
+            <strong>¿Dudas con la ruta en camino?</strong>
+            <p>Comunícate directamente: <a href="tel:0995621296"><i class="fa-solid fa-phone"></i> 0995621296</a> (Arturo Mier)</p>
+          </div>
+        </div>
+
+        <!-- Mapa Embebido -->
+        <div class="map-container-card">
+          <div class="map-frame-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8997205423854!2d-77.893055!3d0.641667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a3c7c25243171%3A0x6b77202720d2d3a1!2sReserva%20Ecol%C3%B3gica%20El%20%C3%81ngel!5e0!3m2!1ses!2sec!4v1711234567890!5m2!1ses!2sec" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Reserva Ecológica El Ángel - Espeletia Lodge">
+            </iframe>
+          </div>
+          <div class="map-action-bar">
+            <span><i class="fa-solid fa-location-pin"></i> Reserva Ecológica El Ángel, Carchi</span>
+            <a href="https://maps.google.com/?q=Reserva+Ecologica+El+Angel+Carchi" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+              Abrir en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. RESEÑAS Y TESTIMONIOS -->
+  <section class="section section-reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-pre-title" data-i18n="reviews.subtitle">Huellas en el Páramo</span>
+        <h2 class="section-main-title" data-i18n="reviews.title">Voces de Quienes Vivieron la Magia</h2>
+        <div class="divider-leaf">
+          <span></span><i class="fa-solid fa-star"></i><span></span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "Dormir escuchando el viento del páramo mientras estás sumergido en la tina de hidromasaje caliente 
+            viendo los frailejones es una experiencia que no se puede describir con palabras. La comida y las 
+            tortillas de tiesto fueron el toque perfecto."
+          </p>
+          <div class="reviewer">
+            <strong>Mateo & Andrea</strong>
+            <span>Quito, Ecuador</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "The ancient Polylepis forest is like stepping into a fairy tale. The cabins are very warm, the 
+            electric blankets made sleep wonderful, and Mr. Arturo was extremely kind. Unforgettable hiking!"
+          </p>
+          <div class="reviewer">
+            <strong>Markus & Sarah Weber</strong>
+            <span>Zürich, Suiza</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "El columpio en el páramo te da una inyección de adrenalina con una vista insuperable. El paquete 
+            con las tres comidas vale totalmente la pena, el filete con champiñones estuvo exquisito."
+          </p>
+          <div class="reviewer">
+            <strong>Dra. Carmen Benavides</strong>
+            <span>Ibarra, Ecuador</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo-espeletia-lodge.png" alt="Espeletia Lodge Logo" class="footer-logo">
+          <h3>ESPELETIA LODGE</h3>
+          <p class="footer-poetic-phrase">
+            "Donde el alma descansa en la quietud de las alturas y la naturaleza te abraza con calor de leña y cobijas de páramo."
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#bosque">El Bosque Milenario</a></li>
+            <li><a href="#hospedaje">Cabañas & Tarifas</a></li>
+            <li><a href="#gastronomia">Gastronomía</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Contacto & Reservas</h4>
+          <p><i class="fa-solid fa-user"></i> <strong>Anfitrión:</strong> Arturo Mier</p>
+          <p><i class="fa-solid fa-phone"></i> <strong>Teléfono / WhatsApp:</strong> <a href="tel:0995621296">0995621296</a></p>
+          <p><i class="fa-solid fa-calendar-day"></i> <strong>Horario:</strong> Abierto de Lunes a Domingo</p>
+          <p><i class="fa-solid fa-location-dot"></i> <strong>Ubicación:</strong> Reserva Ecológica El Ángel, Carchi, Ecuador</p>
+          <div class="social-pills">
+            <a href="https://wa.me/593995621296" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Espeletia Lodge. Todos los derechos reservados.</p>
+        <p class="academic-credit">Proyecto Desarrollado para UPEC - Universidad Politécnica Estatal del Carchi | Autor: Daniel Llano</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA button -->
+  <a href="https://wa.me/593995621296?text=Hola%20Arturo%20Mier,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20hospedaje%20en%20Espeletia%20Lodge" 
+     class="floating-whatsapp-btn" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="tooltip">¿Deseas reservar? Escríbenos</span>
+  </a>
+
+  <!-- Script Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
